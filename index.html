@@ -4,15 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To-Do_App</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <button id="ajouter">Ajouter</button>
-    <button id="sup">Supprimer</button>
-    <button id="editer">Editer</button>
-    <script>
-        const ajouter=document.getElementById("ajouter");
-        const sup=document.getElementById("sup");
-        const editer=document.getElementById("editer");
-    </script>
-</body>
+    <div class="container">
+        <div class="todo-app">
+            <h2>To-do List 📝</h2>
+            <div class="input-text">
+                <input type="text" name="text" id="input" placeholder="Entrer le task">
+                <button onclick="ajouter()">Ajouter</button>
+            </div>
+            <ul id="list-container" class="list-container">
+                <!-- <li class="checked">Bonjour</li> -->
+            </ul>
+        </div>
+    </div>
+    <script src="sript.js"></script>
 </html>
